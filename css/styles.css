@@ -32,6 +32,7 @@ primery-txcolor: #757575;
   --secondary-bgcolor: #2f303a;
   --accent-bgcolor: #f5f4fa;
   --btn-hover-color: #188ce8;
+  --svg-bgcolor: #afb1b8;
 }
 
 body {
@@ -412,7 +413,7 @@ p {
   padding: 0;
   /* border-radius: 50%;
   */
-  color: #afb1b8;
+  color: var(--svg-bgcolor);
   background-color: var(--white-txcolor);
 }
 .alink:focus,
@@ -486,6 +487,8 @@ p {
 }
 .filter-link {
   display: block;
+  margin: 0;
+  padding: 0;
 }
 .filter-link:hover {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
@@ -528,6 +531,7 @@ p {
 }
 .customers-item {
   display: block;
+  flex-basis: calc(100% / 6 - 30px);
   margin-right: 30px;
 }
 .customers-link {
@@ -537,9 +541,9 @@ p {
   justify-content: center;
   align-items: center;
 
-  border: 1px solid #afb1b8;
+  border: 1px solid var(--svg-bgcolor);
   border-radius: 4px;
-  color: #afb1b8;
+  color: var(--svg-bgcolor);
 }
 .customers-link:focus,
 .customers-link:hover {
