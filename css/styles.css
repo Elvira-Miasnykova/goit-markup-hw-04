@@ -128,7 +128,8 @@ p {
 .nav-list {
   display: flex;
 }
-
+.nav-list .link::after {
+}
 .auth-nav {
   display: flex;
   margin-left: auto;
