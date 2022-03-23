@@ -27,9 +27,13 @@
         >
         <!-- навигация -->
         <nav class="main-nav">
-          <ul class="nav-list list">
+          <ul class="nav-list list current-position">
             <li class="list-style flex-item">
-              <a class="link general current underlinenone" href="">Студия</a>
+              <a
+                class="link general current underlinenone studio-underline"
+                href=""
+                >Студия</a
+              >
             </li>
             <li class="list-style flex-item">
               <a class="link general underlinenone" href="./portfolio.html"
@@ -76,7 +80,9 @@
         <div class="container">
           <div class="hero-inner">
             <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-            <button type="button" class="btn">Заказать услугу</button>
+            <button type="button" class="btn" data-modal-open>
+              Заказать услугу
+            </button>
           </div>
           <!-- </div> -->
         </div>
@@ -151,25 +157,37 @@
           <h2 class="app-title">Чем мы занимаемся</h2>
           <ul class="list app-list">
             <li class="list-style app-item">
-              <img
-                src="./images/desktop-app.jpg"
-                alt="десктопные приложения"
-                width="370"
-              />
+              <div class="app-thumb">
+                <img
+                  class="app-img"
+                  src="./images/desktop-app.jpg"
+                  alt="десктопные приложения"
+                  width="370"
+                />
+                <h3 class="app-item-title">десктопные приложения</h3>
+              </div>
             </li>
             <li class="list-style app-item">
-              <img
-                src="./images/mobile-app.jpg"
-                alt="приложения для моб телефонов"
-                width="370"
-              />
+              <div class="app-thumb">
+                <img
+                  class="app-img"
+                  src="./images/mobile-app.jpg"
+                  alt="приложения для моб телефонов"
+                  width="370"
+                />
+                <h3 class="app-item-title">мобильные приложения</h3>
+              </div>
             </li>
             <li class="list-style app-item">
-              <img
-                src="./images/tablet-app.jpg"
-                alt="приложения для планшета"
-                width="370"
-              />
+              <div class="app-thumb">
+                <img
+                  class="app-img"
+                  src="./images/tablet-app.jpg"
+                  alt="приложения для планшета"
+                  width="370"
+                />
+                <h3 class="app-item-title">дизайнерские решения</h3>
+              </div>
             </li>
           </ul>
         </div>
@@ -518,5 +536,22 @@
         </div>
       </div>
     </footer>
+
+    <!-- modal window -->
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button
+          class="backdrop-btn"
+          type="button"
+          aria-label="close"
+          data-modal-close
+        >
+          <!-- <svg>
+            <use href="./images/close.svg"></use>
+          </svg> -->
+        </button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
